@@ -13,7 +13,7 @@
 %   - removes years missing >25% of daily records
 %   - removes stations missing > 2 years of data
 %   - sums the number of days per winter (December through March) with snow
-%   depth greater than a user-defined threshold (>3" recommended).  
+%   depth greater than a user-defined threshold (>4" recommended).  
 %   - calculates the state average # of snow days per winter
 %   - ranks the winters from highest to lowest number of snow covered days
 %
@@ -31,7 +31,7 @@ years = (1850:2050)';
 yrstart = find(years==2000);
 yrend = find(years==2016);
 yrs = years(yrstart:yrend)';
-snwd_thresh = 76.2; % snow depth in mm
+snwd_thresh = 101.6; % snow depth in mm (4" here)
 data_thresh = 0.25; % winter missing data threshold
 yr_thresh = 2;      % time series missing years threshold 
 
