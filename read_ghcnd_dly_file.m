@@ -8,6 +8,9 @@ function station=read_ghcnd_dly_file(filename,ghcnd_metadata,varargin)
 % and requires both "mk_ghcnd_metadata.m" and "mk_ghcnd_metadata_inv.m"
 % The input "ghcnd_metadata" is needed and may be produced by
 % first running "mk_ghcnd_metadata.m"
+
+% From the Matlab Spring Indices code provided by Ault et al. 2015
+% https://www.mathworks.com/matlabcentral/fileexchange/54679-extended-spring-indices--si-x--code
  
 % ------------------------------
 % Variable   Columns   Type
