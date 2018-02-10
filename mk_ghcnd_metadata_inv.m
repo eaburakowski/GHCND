@@ -1,3 +1,5 @@
+% Modified from the Matlab Spring Indices code provided by Ault et al. 2015
+% https://www.mathworks.com/matlabcentral/fileexchange/54679-extended-spring-indices--si-x--code
 
 ghcnd_metadata_filename='ghcnd_inventory';
 ghcnd_metadata_dir='/Users/Antares/Documents/Data/GHCN_Daily/GHCND_2017/';
