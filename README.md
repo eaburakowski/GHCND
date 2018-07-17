@@ -24,24 +24,25 @@ Files listed in order of use in my processeing & analysis.
   - start year of record
   - end year of record
   - location (US states)
-  - snow depth availability (var = SNWD)
+  - data availability (var = SNWD, SNOW, TMAX, TMIN, or PRCP)
   
 (3) read_ghcnd_dly_file.m
 - loads ghcnd station data
 - used in GHCND_SNWD.m, below. Not meant to run as stand-alone
 - from Matlab Spring Indices code package (Ault et al. 2015)
 
-(4) GHCND_SNWD.m
+(4) GHCND_SNWD.m (same for GHCND_TMAX.m, GHCND_PRCP.m)
 - loads Global Historical Climatology Network Daily files using the function "read_ghcnd_dly_file.m"
 - Output is a state-level .mat file of daily station data meeting criteria defined in filterGHCND.m
 
-(5) procSNWD.m
+(5) procSNWD.m (same for procTMAX_LOCA.m, procTMIN_LOCA.m, procPRPC_LOCA.m) 
 - loads state-level .mat files created using "GHCND_SNWD.m", which contain GHCND daily snow depth data (in mm), 2000-2016. 
 - The script then does the following:
-  - calculates percent missing data per winter
-  - removes years missing >25% of daily records
-  - removes stations missing > 2 years of data
+  - calculates percent missing data per season or year
+  - removes years or seasons missing % threshold of daily records
+  - removes stations missing > 2 years of data (procSNWD.m only)
   - sums the number of days per winter (December through March) with snow
-    depth greater than a user-defined threshold (>4" recommended).  
-  - calculates the state average # of snow days per winter
-  - ranks the winters from highest to lowest number of snow covered days
+    depth greater than a user-defined threshold (>4" recommended; procSNWD.m only) 
+  - calculates the state average # of snow days per winter (procSNWD.m only)
+  - ranks the winters from highest to lowest number of snow covered days (procSNWD.m only)
+  - calculates a variety of metrics for TMAX, TMIN, and PRCP. 
