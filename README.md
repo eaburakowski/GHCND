@@ -46,3 +46,6 @@ Files listed in order of use in my processeing & analysis.
   - calculates the state average # of snow days per winter (procSNWD.m only)
   - ranks the winters from highest to lowest number of snow covered days (procSNWD.m only)
   - calculates a variety of metrics for TMAX, TMIN, and PRCP. 
+  
+(6) writeGHCND_metadata.m
+  - writes metadata from GHNCD station list generated using filterGHCND.m into .csv file (for use in LOCA processing)
