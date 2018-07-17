@@ -3,12 +3,13 @@ Scripts used to process Global Historical Climatology Network Daily (GHCND) data
 GHCND data available at: 
 https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/global-historical-climatology-network-ghcn
 
-Matlab scripts used for processing GHCND data. Code requires customization and will not run 'as-is'. Always happy to answer questions and I welcome helpful suggestions to improve the efficiency of the code. This code was written for a specific project (TBA at a later date) and is adaptable for multiple uses. elizabeth.burakowski@unh.edu.
-
-NOTE: Several of the matlab scripts are dervied directly from, or modified from, the Matlab Spring Indices code package:
+Matlab scripts used for processing GHCND data. Code requires customization and will not run 'as-is'. Several of the matlab scripts are dervied directly from, or modified from, the Matlab Spring Indices code package:
 https://www.mathworks.com/matlabcentral/fileexchange/54679-extended-spring-indices--si-x--code
-Ault et al. 2015
+Ault et al. 2015.  
 
+Always happy to answer questions and I welcome helpful suggestions to improve the efficiency of the code. The snow-related code was written for a specific project (Protect Our Winters & REI, 2018 - https://www.rei.com/blog/snowsports/climate-change-threatens-11-3-billion-snowsports-industry-protect-our-winters-report-says) and is adaptable for multiple uses. The code is also being used to update the New Hampshire Climate Assessment Report using Localized Constructed Analogs (LOCA) data (Pierce et al. 2014).
+
+contact: elizabeth.burakowski@unh.edu.  
 
 Files listed in order of use in my processeing & analysis.
 
